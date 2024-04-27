@@ -1,0 +1,19 @@
+GET http://127.0.0.1:4000
+###
+POST http://127.0.0.1:4000
+Content-Type: application/json
+
+{
+    "name": "Bintang",
+    "nrp": "3223600023"
+}
+###
+DELETE http://127.0.0.1:4000/Irsyad V
+###
+PUT http://127.0.0.1:4000
+Content-Type: application/json
+
+{
+    "name": "Bintang S",
+    "nrp": "3223600023"
+}
