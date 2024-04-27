@@ -12,8 +12,8 @@ app.get('/',(req,res)=>{
     res.send(users)
 })
 app.post('/',(req,res)=>{
-    const data = req.body
-    users = [...users,data]
+    const datas = req.body
+    users = [...users,datas]
     res.send('user telah dibuat')
 })
 app.delete('/:name',(req,res)=>{
@@ -23,9 +23,9 @@ app.delete('/:name',(req,res)=>{
     res.send(users)
 })
 app.put('/',(req,res)=>{
-    const data = req.body
+    const datas = req.body
     users.map(val =>{
-        if(val.nrp===data.nrp) val.name= data.name
+        if(val.nrp===datas.nrp) val.name= datas.name
     })
     res.send(users)
 })
